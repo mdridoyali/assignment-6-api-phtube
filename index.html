@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto mt-5 px-4">
+        <nav>
+            <div class=" bg-base-100 mx-auto text-center sm:flex items-center justify-between space-y-6 ">
+                <div class=" text-center">
+                    <img class="mx-auto text-center mt-8" src="image/Logo.png" alt="">
+                </div>
+                <div class="text-center md:mr-24 ">
+                    <button id="sortByView"
+                        class=" btn  border-none py-1 px-4 text-xl font-semibold cursor-pointer rounded-lg">Sort by
+                        view</button>
+                </div>
+                <div class="">
+                    <a href="image/index.html"
+                        class=" btn-primary bg-[#FF1F3D] border-none py-1 px-4 text-xl font-bold cursor-pointer rounded-lg">Blog</a>
+                </div>
+            </div>
+            <hr class="my-5 border">
+        </nav>
+    </header>
+
+    <main>
+        <!-- category section -->
+        <div id="tab-container"
+            class=" grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8 w-11/12 lg:w-1/2 md:w-8/12  mx-auto text-center">
+        </div>
+
+        <div id="card-container"
+            class=" container mx-auto my-6 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4">
+        </div>
+        <div id="tab-drawing" class="hidden">
+            <div class="flex flex-col justify-center items-center">
+                <img class="h-20 w-20 ml-1 inline" src="image/Icon.png">
+                <h2 class="text-3xl font-bold text-center">Oops!! Sorry, There is no <br> content here</h2>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
